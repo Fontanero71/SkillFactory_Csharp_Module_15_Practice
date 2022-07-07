@@ -21,9 +21,9 @@ namespace SkillFactory_Csharp_Module_15_Practice
         {
             
             IEnumerable<string> studentsAll = new List<string>();
-            foreach (var student in classes)
+            foreach (var eachClass in classes)
             {
-                studentsAll = studentsAll.Concat(student.Students);
+                studentsAll = studentsAll.Concat(eachClass.Students);
             }
             
             var studentsAllFinal = studentsAll.ToArray();
